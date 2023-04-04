@@ -1,4 +1,4 @@
-package org.launchcode.java.studios.restaurantmenu;
+
 
 import java.util.Arrays;
 import java.util.HashMap;
@@ -18,15 +18,4 @@ public class Main {
 //  mostRecent – Maybe just select the most recent item pushed into array list
 //      Has the item most recently added
 //      optional
-//MenuItem
-//  Price – double
-//  Description – string
-//  Category – string
-//  New – Boolean
-//  Name – String
-//  isAvailable – Boolean
-//  isVegan - Boolean
-//  dateAdded – Date class
-//  Allergens – ArrayList of strings
-//  spiceLevel – Int
-//  proteinType - string
+
