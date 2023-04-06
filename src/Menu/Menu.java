@@ -1,9 +1,12 @@
+package Menu;
+
 import java.util.ArrayList;
+
 public class Menu {
-        private ArrayList<MenuItem> Items;
+        private ArrayList<MenuItem> items;
         private String dateUpdated;
-        public Menu(ArrayList<MenuItem> Items, String dateUpdated) {
-                this.Items = Items;
+        public Menu(ArrayList<MenuItem> items, String dateUpdated) {
+                this.items = items;
                 this.dateUpdated = dateUpdated;
         }
         //getters and setters
@@ -20,7 +23,7 @@ public class Menu {
                         this.dateUpdated = dateUpdated;
                 }
 }
-//Menu
+//Menu.Menu
 //  Date updated – Date class
 //  Items – ArrayList of MenuItems
 //      Needs to hold all the MenuItems

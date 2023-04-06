@@ -1,3 +1,5 @@
+package Menu;
+
 import java.util.Date;
 
 public class MenuItem {
@@ -91,7 +93,7 @@ public class MenuItem {
         }
 }
 
-//MenuItem
+//Menu.MenuItem
 //  Price – double
 //  Description – string
 //  Category – string
