@@ -1,4 +1,4 @@
-package Menu;
+package Restaurant;
 
 import java.util.Date;
 
@@ -11,20 +11,31 @@ public class MenuItem {
     private boolean isAvailable;
     private Date dateAdded;
     private String dietaryAdvisories; //covers Allergies, Gluten, Vegan, etc
-
-    public MenuItem(String name, double price, String description, String category) {
-        this.name = name;
-        this.price = price;
-        this.description = description;
-        this.category = category;
-        this.dietaryAdvisories = "None";
-    }
     public MenuItem(String name, double price, String description, String category, String dietaryAdvisories) {
         this.name = name;
         this.price = price;
         this.description = description;
         this.category = category;
         this.dietaryAdvisories = dietaryAdvisories;
+        this.isNew = false;
+    }
+    public MenuItem(String name, double price, String description, String category, String dietaryAdvisories, boolean isNew) {
+        this.name = name;
+        this.price = price;
+        this.description = description;
+        this.category = category;
+        this.dietaryAdvisories = dietaryAdvisories;
+        this.isNew = isNew;
+    }
+    public void printItem(MenuItem item){
+        System.out.println(
+                "Item: " + item.getName() + "\n"
+                        + "Course: " + item.getCategory()  + "\n"
+                        + "Description: " + item.getDescription() + "\n"
+                        + "Contains: " + item.getDietaryAdvisories() + "\n"
+                        + "Price: " + item.getPrice() + "\n"
+                        + "New?: " + item.isNew()
+        );
     }
 
     //getters and setters

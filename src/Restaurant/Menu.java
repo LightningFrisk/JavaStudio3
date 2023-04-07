@@ -1,4 +1,4 @@
-package Menu;
+package Restaurant;
 
 import java.util.ArrayList;
 
@@ -9,12 +9,13 @@ public class Menu {
                 this.items = items;
                 this.dateUpdated = dateUpdated;
         }
+
         //getters and setters
                 public ArrayList<MenuItem> getItems() {
-                        return Items;
+                        return items;
                 }
                 public void setItems(ArrayList<MenuItem> items) {
-                        Items = items;
+                        this.items = items;
                 }
                 public String getDateUpdated() {
                         return dateUpdated;
@@ -22,6 +23,25 @@ public class Menu {
                 public void setDateUpdated(String dateUpdated) {
                         this.dateUpdated = dateUpdated;
                 }
+
+        //functions
+        public void addItem(MenuItem item, String whenUpdated){
+                items.add(item);
+                setDateUpdated(whenUpdated);
+        };
+        public void removeItem(MenuItem item, String whenUpdated){
+                items.remove(item);
+                setDateUpdated(whenUpdated);
+        }
+        public void printItems(Menu menu){
+                for (MenuItem item : this.items){
+                        System.out.println("------------");
+                        System.out.println("");
+                        item.printItem(item);
+                        System.out.println("");
+                }
+                System.out.println("------------");
+        }
 }
 //Menu.Menu
 //  Date updated – Date class
