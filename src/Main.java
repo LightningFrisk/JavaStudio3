@@ -16,6 +16,8 @@ public class Main {
         mainMenu.addItem(rottenEggs, "2/6/99");
         mainMenu.addItem(eggs, "4/6/23");
         mainMenu.printItems(mainMenu);
+
+        System.out.println(eggs.equals(rottenEggs));
     }
 }
 //Menu.Menu

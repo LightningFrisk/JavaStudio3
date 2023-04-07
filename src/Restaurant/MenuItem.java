@@ -37,6 +37,23 @@ public class MenuItem {
                         + "New?: " + item.isNew()
         );
     }
+    public boolean equals(MenuItem toBeCompared) {
+
+        if (toBeCompared == this) {
+            return true;
+        }
+
+        if (toBeCompared == null) {
+            return false;
+        }
+
+        if (toBeCompared.getClass() != getClass()) {
+            return false;
+        }
+
+        MenuItem theItem = (MenuItem) toBeCompared;
+        return theItem.getDietaryAdvisories() == getDietaryAdvisories();
+    }
 
     //getters and setters
         public double getPrice() {
