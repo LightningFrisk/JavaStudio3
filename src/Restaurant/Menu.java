@@ -34,6 +34,7 @@ public class Menu {
                 setDateUpdated(whenUpdated);
         }
         public void printItems(Menu menu){
+                System.out.println("Date Last Updated - " + this.dateUpdated);
                 for (MenuItem item : this.items){
                         System.out.println("------------");
                         System.out.println("");

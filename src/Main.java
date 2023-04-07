@@ -6,13 +6,13 @@ import java.util.ArrayList;
 public class Main {
     public static void main(String[] args) {
         ArrayList<MenuItem> Items = new ArrayList<>();
-        System.out.println("It lives!!!");
+        //System.out.println("It lives!!!");
         MenuItem eggs = new MenuItem("eggs", 6.99, "eggs!", "entree", "contains: eggs", true);
         MenuItem rottenEggs = new MenuItem("rotten eggs", 0.99, "rotten eggs!", "entree", "contains: eggs");
         //System.out.println(eggs.getName());
         //eggs.printItem(eggs);
 
-        Menu mainMenu = new Menu(Items, "4/6/23");
+        Menu mainMenu = new Menu(Items, "Never");
         mainMenu.addItem(rottenEggs, "2/6/99");
         mainMenu.addItem(eggs, "4/6/23");
         mainMenu.printItems(mainMenu);
